@@ -11,7 +11,7 @@ body{
     font-family: 'Outfit',sans-serif;
     margin:0;
     padding: 0;
-    font-size: 1rem;
+    font-size: clamp(0.7rem,5vw,1rem);
     background-color: rgba(123, 40, 79, 0.377);
     display: flex;
     flex-direction: column;
@@ -33,6 +33,65 @@ body{
     --brown-800: hsl(14, 45%, 36%);
     --rose-800:hsla(332, 51%, 32%);
     --rose-50:hsl(330, 100%, 98%);
+}
+
+ h3,h2{
+    color: var(--brown-800);
+   
+    
+}
+h2,h1{
+    text-align: start;
+    font-family: 'Youngserif';
+     font-weight: 600;
+}
+hr{
+    color: var(--stone-100);
+}
+
+table{
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+   
+}
+table tr{
+    
+    text-align: center;
+    border-bottom: 1px solid rgba(129, 128, 128, 0.514);
+}
+table tr td{
+    padding: 0.4rem 0.8rem;
+   
+}
+table tbody tr td:nth-child(2){
+    font-weight: bold;
+    color: var(--brown-800);
+    text-align: start;
+}
+table tbody tr td:first-child{
+
+    text-align: left;
+}
+
+
+.container img{
+   width: 100%;
+   border-radius: 0.5rem;
+}
+.container p,.container li{
+    text-align: start;
+    color: var(--stone-600);
+}
+.container__section ul>li , .container__section ol>li{
+    line-height: 1.8;
+}
+.container__section ol>li::marker{
+    font-weight: bold;
+    color: var(--brown-800);
 }
 
 .container{
@@ -70,63 +129,8 @@ body{
    .container__preparationDetails ul>li , .container__section ul>li ,.container__section ol>li{
       padding-inline-start: 0.8rem;
    }
- h3,h2{
-    color: var(--brown-800);
-   
-    
-}
-h2,h1{
-    text-align: start;
-    font-family: 'Youngserif';
-     font-weight: 600;
-}
-hr{
-    color: var(--stone-100);
-}
 
-.container img{
-   width: 100%;
-   border-radius: 0.5rem;
-}
-.container p,.container li{
-    text-align: start;
-    color: var(--stone-600);
-}
-.container__section ul>li , .container__section ol>li{
-    line-height: 1.8;
-}
-.container__section ol>li::marker{
-    font-weight: bold;
-    color: var(--brown-800);
-}
-table{
-    width: 100%;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-   
-}
-table tr{
-    
-    text-align: center;
-    border-bottom: 1px solid rgba(129, 128, 128, 0.514);
-}
-table tr td{
-    padding: 0.4rem 0.8rem;
-   
-}
-table tbody tr td:nth-child(2){
-    font-weight: bold;
-    color: var(--brown-800);
-    text-align: start;
-}
-table tbody tr td:first-child{
-
-    text-align: left;
-}
-@media  (min-width:457px) {
+@media  (min-width:28.625rem) {
     
     .container{
         width: 85%;
